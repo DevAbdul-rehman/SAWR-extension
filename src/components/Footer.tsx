@@ -1,4 +1,4 @@
-import type { FC } from 'react';
+import type { FC, MouseEvent } from 'react';
 import { ExternalLink } from 'lucide-react';
 
 interface FooterProps {
@@ -7,9 +7,9 @@ interface FooterProps {
 }
 
 export const Footer: FC<FooterProps> = ({ charCount = 0 }) => {
-  const githubRepoUrl = 'https://github.com/MuhammadAbdulRehman0/SAWR-extension';
+  const githubRepoUrl = 'https://github.com/DevAbdul-rehman/SAWR-extension';
 
-  const handleOpenLink = (e: React.MouseEvent) => {
+  const handleOpenLink = (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     if (typeof chrome !== 'undefined' && chrome.tabs) {
       chrome.tabs.create({ url: githubRepoUrl });
