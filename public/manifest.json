@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "SAWR - Smart AI Website Reader",
+  "short_name": "SAWR",
+  "version": "1.0.0",
+  "description": "Smart AI Website Reader - Context-aware AI reading and Q&A assistant.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Open SAWR Assistant",
+    "theme_icons": [
+      {
+        "light": "logo.png",
+        "dark": "logo.png",
+        "size": 16
+      },
+      {
+        "light": "logo.png",
+        "dark": "logo.png",
+        "size": 48
+      },
+      {
+        "light": "logo.png",
+        "dark": "logo.png",
+        "size": 128
+      }
+    ]
+  },
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  }
+}
