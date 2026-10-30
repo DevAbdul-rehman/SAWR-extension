@@ -4,7 +4,7 @@ import { GoogleGenAI } from '@google/genai';
 const GEMINI_API_KEYS = [
   import.meta.env.VITE_GEMINI_API_KEY_1,
   import.meta.env.VITE_GEMINI_API_KEY_2,
-].filter(Boolean) as string[];
+].filter(Boolean) as string[];;
 
 export async function callGeminiWithFallback(contents: any[], systemInstructionText: string): Promise<string> {
   const models = ['gemini-2.0-flash', 'gemini-3.5-flash-lite'];
