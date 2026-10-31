@@ -12,9 +12,8 @@ export const SettingsView: FC<SettingsViewProps> = ({
   hasScraped,
   onReset,
 }) => {
-  const MY_EMAIL = 'your-email@gmail.com';
-  const mailtoUrl = `mailto:${MY_EMAIL}?subject=SAWR%20Feedback%20%26%20Suggestions&body=Hi%20there,%0D%0A%0D%0AHere%20is%20my%20feedback%20or%20suggestion%20for%20SAWR:%0D%0A%0D%0A`;
-
+const MY_EMAIL = 'chromatic753@gmail.com';
+const mailtoUrl = `mailto:${MY_EMAIL}?subject=SAWR%20Feedback%20%26%20Suggestions&body=Hi%20there,%0D%0A%0D%0AHere%20is%20my%20feedback%20or%20suggestion%20for%20SAWR:%0D%0A%0D%0A`;
   const handleOpenEmail = (e: React.MouseEvent) => {
     e.preventDefault();
     if (typeof chrome !== 'undefined' && chrome.tabs) {
